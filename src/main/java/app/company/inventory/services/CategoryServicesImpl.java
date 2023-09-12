@@ -61,7 +61,7 @@ public class CategoryServicesImpl implements ICategoryService{
 			} else {
 				
 				response.setMetadata("Respuesta not ok", "-1", "Categoria no encontrada");
-				return new ResponseEntity<CategoryResponseRest>(response, HttpStatus.INTERNAL_SERVER_ERROR);
+				return new ResponseEntity<CategoryResponseRest>(response, HttpStatus.NOT_FOUND);
 				
 			}
 			
